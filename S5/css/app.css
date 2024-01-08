@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Roboto:wght@400;500;700&display=swap");
+/* Strart RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* end RESET */
+
+/*  start CONTAINER */
+.container-fluid {
+  /* se foloseste direct in body. Are toata latimea paginii */
+  padding: 0 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  /* reprezinta un rand de continut. se pune doar in container-fluid, container sau col */
+  margin: 0 -1.6rem;
+  display: flex;
+  /* in row nu se pune continut. doar un container sau un col */
+}
+
+.container {
+  /* se intinde de sus pana jos in pagina, toate elementele se aliniaza la el */
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+
+.col {
+  /* aici punem continutul paginii-imagini paragrafe etc */
+  flex: 1;
+  padding: 0 1.6rem;
+}
+/* end CONTAINER*/
+
+.section-1-background {
+  background-color: grey;
+  background-image: url("https://source.unsplash.com/1920x1080");
+}
+
+/* start typography */
+h1 {
+  font-size: 4.2rem;
+  line-height: 5rem;
+  color: #1b1b1b;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+h2 {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  color: #1b1b1b;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #1b1b1b;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
+/* end typography */

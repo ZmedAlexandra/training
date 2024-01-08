@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500&display=swap");
+
+/* START reset - de copiat in toate proiectele*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  /* se refera la buline sau numar */
+  list-style-type: none;
+}
+
+a {
+  /* ca sa nu mai fie subliniate link-urile */
+  text-decoration: none;
+}
+/* end reset */
+
+.flex {
+  display: flex;
+  border: 1px solid red;
+}
+
+.child {
+  border: 1px solid green;
+  padding: 0.8rem 1.6rem;
+}
+
+/* copilul cu cel mai mare height dicteaza inaltimea celorlalti copii dintr-un flex daca ceilalti nu au height stabilit*/
+
+.child:first-of-type {
+  height: 10rem;
+}
+
+.child:last-of-type {
+  height: 20rem;
+}
+
+/* start grid */
+.container {
+  /* width are 100% atata timp cat nu e mai mare de 120rem - adica se opreste cand ajunge la 120 rem */
+  width: 100%;
+  max-width: 120rem;
+  /* MARGIN se foloseste pt a centra un bloc - tot timpul se foloseste auto */
+  margin: auto;
+  padding: 0 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  margin-left: -1.6rem;
+  margin-right: -1.6rem;
+  display: flex;
+}
+.col {
+  padding: 0 1.6rem;
+  flex: 1;
+}
+
+.col-1 {
+  padding: 0 1.6rem;
+  width: calc(1 * 8.3333%);
+}
+.col-2 {
+  padding: 0 1.6rem;
+  width: calc(2 * 8.3333%);
+}
+.col-3 {
+  padding: 0 1.6rem;
+  width: calc(3 * 8.3333%);
+}
+.col-4 {
+  padding: 0 1.6rem;
+  width: calc(4 * 8.3333%);
+}
+.col-5 {
+  padding: 0 1.6rem;
+  width: calc(5 * 8.3333%);
+}
+.col-6 {
+  padding: 0 1.6rem;
+  width: calc(6 * 8.3333%);
+}
+.col-7 {
+  padding: 0 1.6rem;
+  width: calc(7 * 8.3333%);
+}
+.col-8 {
+  padding: 0 1.6rem;
+  width: calc(8 * 8.3333%);
+}
+.col-9 {
+  padding: 0 1.6rem;
+  width: calc(9 * 8.3333%);
+}
+.col-10 {
+  padding: 0 1.6rem;
+  width: calc(10 * 8.3333%);
+}
+.col-11 {
+  padding: 0 1.6rem;
+  width: calc(11 * 8.3333%);
+}
+.col-12 {
+  padding: 0 1.6rem;
+  width: calc(12 * 8.3333%);
+}
+/* end grid */
+
+/* start header */
+.header {
+  background-color: #2b2922;
+  color: #fafafa;
+  padding: 0.8rem 0;
+}
+
+.header li a {
+  color: #fafafa;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  display: block;
+  /* padding mareste partea pe care se poate da click ( adica nu doar pe text- merge un pic si pe langa) */
+  padding: 0.4rem 0.8rem;
+  text-transform: uppercase;
+}
+
+.header ul {
+  display: flex;
+}
+/* end header */
+
+/* start helpers */
+.space-between {
+  justify-content: space-between;
+}
+
+.space-between > * {
+  flex: unset;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* end helpers */

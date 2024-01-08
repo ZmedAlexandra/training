@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; /* <- asta va fi 1rem *\
+  /* tu decizi cati px e 1 rem */
+}
+
+/* *= apeleaza toate elementele din pagina */
+* {
+  box-sizing: border-box;
+}
+p {
+  font-size: 1rem;
+  /* line height e spatiul necesar sa acomodeze orice tip de litera */
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+h1 {
+  /* se refera la toate elementele <h1><h1/> */
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+}
+
+.h1_work {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+/* id>class>element ( id e mai important decat class care e mai important decat elementul) */
+
+p {
+  border: red solid 1px;
+  /* display: inline; */
+  /* elementele cu display inline nu suporta width, height, padding, margin */
+  width: 400px;
+  /* height: 400px; */
+  padding: 10px;
+  margin: 100px;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  color: #fafafa;
+  padding: 0.8rem 3rem 1rem;
+  border-radius: 1.8rem;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #292929;
+}
+
+.btn-secondary {
+  color: #292929;
+  background-color: #f5f5f5;
+}
+
+.btn-danger {
+  background-color: #d5362b;
+}

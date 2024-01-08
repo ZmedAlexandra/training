@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@300;400;500;600&family=Lato:wght@400;700;900&display=swap");
+
+/* START reset - de copiat in toate proiectele*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Asap", sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  /* se refera la buline sau numar */
+  list-style-type: none;
+}
+
+a {
+  /* ca sa nu mai fie subliniate link-urile */
+  text-decoration: none;
+}
+/* end reset */
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  padding: 0 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  margin-left: -1.6rem;
+  margin-right: -1.6rem;
+  display: flex;
+}
+.col {
+  padding: 0 1.6rem;
+  flex: 1;
+}
+.col-6 {
+  padding: 0 1.6rem;
+  width: calc(6 * 8.3333%);
+}
+.col-4 {
+  padding: 0 1.6rem;
+  width: calc(4 * 8.3333%);
+}
+/* start header */
+.sale {
+  margin: 0 -2rem;
+}
+.h5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.22rem;
+  color: #cacdc1;
+  display: block;
+  text-align: center;
+  padding: 0.8rem 2rem;
+
+  margin-top: -1.9rem;
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid coral;
+}
+.header {
+  background-color: #191e30;
+  color: #fafafa;
+  padding: 1.9rem 2rem;
+}
+
+.header li a {
+  color: #fafafa;
+  font-size: 1.8rem;
+  line-height: 1rem;
+  display: block;
+  /* padding mareste partea pe care se poate da click ( adica nu doar pe text- merge un pic si pe langa) */
+  padding: 1rem 2.4rem;
+  text-transform: capitalize;
+}
+
+.header ul {
+  display: flex;
+}
+/* end header */
+
+/* start helpers */
+.space-between {
+  justify-content: space-between;
+}
+
+.space-between > * {
+  flex: unset;
+}
+
+.align-center {
+  align-items: center;
+}
+.space-evenly {
+  justify-content: space-evenly;
+}
+.center {
+  justify-content: center;
+}
+
+/* end helpers */
+
+/* start BODY */
+.hero {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.titlu {
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 5rem;
+  color: black;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+.paragraf {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  display: block;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+}
+
+.imagini {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 7rem;
+}
+.imagini img {
+  width: 25%;
+}
+.imgRight {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  display: block;
+  padding: 1.1rem 0;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: white;
+  background-color: #008768;
+  border-radius: 2.4rem;
+  margin: 0;
+  line-height: 1.5rem;
+  border: 0;
+  width: 40%;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #191e3066;
+  margin-top: 6rem;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  display: block;
+}
+.h2 {
+  font-size: 3.6rem;
+  line-height: 5.7rem;
+  text-align: center;
+  color: #191e30;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+.header2 {
+  font-size: 3.6rem;
+  line-height: 5.7rem;
+  text-align: center;
+  color: #191e30;
+  margin: 0;
+  font-weight: 400;
+}
+.subtitle2 {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: #191e30;
+  margin-top: 2rem;
+}
+
+.box {
+  width: 100%;
+  max-width: 28rem;
+  border-radius: 1.6rem;
+  background-color: #fdfdfd;
+  padding: 2.4rem, 0;
+  box-shadow: 0 2rem 4rem 0 #191e301a;
+  position: relative;
+}
+
+.mode {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.8rem;
+  color: #00c569;
+  background-color: #00c5691a;
+}
+.mode p {
+  white-space: nowrap;
+}
+.box img {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0 42px 42px 0;
+}
+
+.h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 3rem;
+  color: black;
+  display: block;
+  text-align: left;
+  padding: 0 2.4rem;
+  min-height: 9rem;
+}
+.minister {
+  padding: 0, 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: black;
+  margin-top: 2rem;
+  padding: 0 2.4rem;
+}
+.sesiune {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: left;
+  color: black;
+  padding: 0 2.4rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.cards {
+  margin-top: 5rem;
+}
+
+.cards div[class^="col-"] {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3.1rem;
+  padding: 0 2.4rem;
+}
+
+/* .dot {
+}
+
+.dot.active {
+} */
+/* end BODY */

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="o"></div>
+    <script>
+      const o = document.querySelector("#o");
+
+      if (!window.location.search.includes("?")) {
+        o.innerHTML = "No GET parameters found.";
+      } else {
+        const values = window.location.search
+          .toString()
+          .replace(/\?/g, "")
+          .split("&");
+
+        values.forEach((v) => {
+          const kv = v.split("=");
+          o.innerHTML += `<p><b>${kv[0]}</b> is <span>${kv[1]}</span></p>`;
+        });
+
+        function changeInput() {
+          alert("A mers!");
+        }
+      }
+    </script>
+  </body>
+</html>

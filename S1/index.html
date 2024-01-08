@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titlul din tab -->
+    <title>Document</title>
+
+    <!-- Cum afectam pe google results -->
+    <meta name="description" content="Eu apar in search result pe Google" />
+    <meta name="url" content="https://www.enovatika.com" />
+    <meta name="keywords" content="training, zmed, branza" />
+
+    <!-- Open Graph pt social media -->
+    <meta name="og:title" content="Titlul ce apare la share pe social media" />
+    <meta
+      name="og:description"
+      content="description pe cardul de share din social media"
+    />
+    <meta name="og:image" content="url absolut catre o imagine" />
+
+    <!-- Type: website, article - OPTIONAL-->
+    <meta name="og:type" content="website" />
+    <meta
+      name="og:url"
+      content="url absolut(calea unde e salvata imaginea) al paginii"
+    />
+    <!-- logoul ce apare in tab-ul de browser inaintea numelui de site; -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="public/site.webmanifest" />
+
+    <!-- link = legatura cu un alt fisier -->
+    <link rel="stylesheet" href="CSS\style.css" />
+
+    <script>
+      function changeInput() {
+        alert("A mers!");
+      }
+      function handleFocus(el) {
+        el.style.border = "10px solid blue";
+      }
+
+      function handleBlur(el) {
+        el.style.border = "1px solid grey";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- alt e descrierea pozei, e important ca site-ul meu sa apara si in google images -->
+    <!-- <img src="images\pexels.jpg" alt="o poza cu o vaca" /> -->
+
+    <!-- typography -->
+    <!-- h-urile si paragraful sunt blocuri - ocupa tot randul -->
+    <!-- unic in pagina; above the fold(ce se vede in pagina cand e deschisa la o rezolutie comuna inainte de a scroll-ui) -->
+    <h1>Heading 1</h1>
+
+    <!-- reprezinta titlul sectiunii -->
+    <h2>Heading 2</h2>
+
+    <!-- reprezinta o parte din sectiune -->
+    <h3>Heading 3</h3>
+
+    <!-- 4,5,6 nu se prea folosesc decat daca e mentionat expres -->
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- modul principal de a introduce text -->
+    <p>Paragraph</p>
+
+    <!-- folosit pentru a stiliza anumite bucati de text din paragraf - bold/italic etc -->
+    <span>Span</span>
+
+    <!-- href=hypertext reference se foloseste tot timpul la link-uri -->
+    <a href="form.html">Click me!</a>
+    <!-- _blank_ deschide tab nou - se foloseste doarla link-uri externe gen pagina de fb  -->
+    <a href="https://www.google.com" target="_blank">Google</a>
+
+    <!-- get pt search history si post pt conturi/date sensibile/parole -->
+    <!-- de cautat si exersat toate input types -->
+    <form action="form.html" method="post">
+      <input type="email" name="user" required onchange="changeInput()" />
+
+      <!-- onkeydown -  se triggeruie alerta cand termini de apasat tasta -->
+      <input
+        type="password"
+        name="password"
+        required=""
+        onkeyup="changeInput()"
+      />
+      <!-- se triggeruie alerta in momentul in care apesi tasta -->
+      <input type="text" onkeydown="changeInput()" />
+      <!-- onfocus se triggeruie atata timp cat inputul e selectat si onblur se triggeruie cand plec de pe input -->
+      <input
+        type="text"
+        onfocus="handleFocus(this)"
+        onblur="handleBlur(this)"
+      />
+
+      <!-- date nu se foloseste in proiecte reale -->
+      <!-- <input type="date" /> -->
+
+      <input type="text" placeholder="dd/mm/yyyy" disabled />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

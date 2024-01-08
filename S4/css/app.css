@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* Start RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+/* end RESET */
+
+/* start TYPOGRAPHY */
+p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+/* end TYPOGRAPHY */
+
+.register_button {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+  color: #fafafa;
+  padding: 1.2rem 4.8rem 1.6rem;
+  background: #292929;
+  border-radius: 2.8rem;
+  display: inline-flex;
+  cursor: pointer;
+  transition: background 300ms;
+}
+
+.register_button:hover {
+  background: #3d3d3d;
+}
+
+.register_button[disabled] {
+  background-color: #f5f5f5;
+  color: #cfcfcf;
+  cursor: not-allowed;
+}
+
+.register_button i {
+  position: relative;
+  top: 2px;
+  left: 5px;
+}
+
+.static {
+  position: static;
+  /* static e valoarea default */
+}
+
+.relative {
+  position: relative;
+  /* position relative e pt small changes */
+  top: 5px;
+}
+
+.absolut {
+  position: absolute;
+  /* anuleaza pozitia */
+  top: 5px;
+  right: 0;
+  /* left/width se foloseste pt ca cutia lui sa se intinda pe toata pagina nu doar cat e textul */
+  left: 0;
+}
+
+.fixed {
+  /* pt header */
+  position: fixed;
+  bottom: 0;
+  /* utilizeaza viewport */
+  background-color: grey;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  /* pe verticala */
+  justify-content: center;
+  /* pe orizontala */
+  align-items: center;
+  /* oridinea elementelor in ordine crescatoare de la ecran catre noi ( cu cat e mai mare, e mai aproape de noi) */
+  z-index: 9;
+}
+
+.sticky {
+  /*pt header/tabele*/
+  position: sticky;
+  top: 10rem;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid red;
+  position: relative;
+}
+
+.card h1 {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: red;
+}
